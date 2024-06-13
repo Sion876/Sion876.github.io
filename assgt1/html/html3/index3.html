@@ -1,72 +1,102 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width" />
-    <title>Formatting a biography</title>
-    <style>
+<!-- 
+  Name: Sion Green
+  Date:  June 13, 2024.
+  Description: Styling a Biography Page
+
+-->
+<!doctype html> <!--defines the document as an HTML5 document -->
+<html lang="en"> <!-- Opening tag starts the HTML document and specifies that the language of the document is English-->
+  <head> <!-- The head section contains meta-information about the document, such as its title and links to stylesheets or scripts. -->
+    <meta charset="utf-8" /> <!--Specifies the character encoding for the HTML document 
+    (UTF-8 ensures that the document can handle any character)-->
+    <meta name="viewport" content="width=device-width" /> <!--Ensures the web page is responsive
+     by setting the viewport to match the device's width-->
+    <title>Formatting a biography</title> <!-- Sets the title of the web page -->
+    <style> /* The opening tag for an internal CSS section, where styles are defined */
       body {
         background-color: #fff;
         color: #333;
-        font-family: Arial, Helvetica, sans-serif;
+        font-family: Arial, Helvetica, sans-serif; 
         padding: 1em;
         margin: 0;
-      }
+      } /*Body {} Styles for the body element, including background color, text color, font family, padding, and margin.*/
 
       h1 {
         color: hotpink;
         font-size: 2em;
         font-family: Georgia, "Times New Roman", Times, serif;
-        border-bottom: 1px solid #375e97;
-      }
+        border-bottom: 10px dotted purple;
+        padding: 2px; 
+      } /*Body {} Styles for h1 headers, including text color, font size, font family, bottom border, and padding.*/
+      
+      ul.contact-details {
+        background-color: #eeeeee;
+        border: 5px solid purple;
+        padding: 10px;
+        list-style-type: disc; /* Adds dots (bullets) to the list */
+        padding-left: 30px; /* Adds space between the bullets and the content */
+      } /*ul.contact-details {} Styles for an unordered list with the class contact-details, including background color,
+       border, padding, list style, and left padding.*/
+      
+      ul li { 
+        padding: 5px; /* added spaces in between bullets list */
+      
+      } /*ul li { } Adds padding to each list item inside an unordered list.*/
+
+      .centered { /* Centered the page, showing vertical view*/
+       width: 1000px; 
+       margin: 200px;          
+      } /*centered { } Defines a class for centering content with specific width and margin*/ 
+
 
       h2 {
         font-size: 1.5em;
-      }
+        font-style: italic;
+      } /* h2 {} Styles for h2 headers, including font size and italic style.*/
 
       .job-title {
         color: #999999;
         font-weight: bold;
-      }
+      } /* job-title { } Defines a class for job titles with color and bold font weight*/
 
       a:link,
       a:visited {
         color: #fb6542;
-      }
+      } /* a:link, a:visited { } Styles for normal and visited links with specific color*/
 
       a:hover {
-        text-decoration: none;
-      }
-    </style>
-  </head>
+        color: green;
+      } /*a:hover { } Changes the color of links when hovered*/
+    </style> <!-- Closing tag -->
+  </head> <!---->
 
-  <body>
-    <h1>Jane Doe</h1>
-    <div class="job-title">Web Developer</div>
-    <p>
+  <body> <!---->
+    <div class="centered"> <!---->
+    <h1>Jane Doe</h1> <!---->
+    <div class="job-title">Web Developer</div> <!---->
+    <p> <!---->
       Far far away, behind the word mountains, far from the countries Vokalia
       and Consonantia, there live the blind texts. Separated they live in
       Bookmarksgrove right at the coast of the Semantics, a large language
       ocean.
-    </p>
+    </p> <!---->
 
     <p>
       A small river named Duden flows by their place and supplies it with the
       necessary regelialia. It is a paradisematic country, in which roasted
       parts of sentences fly into your mouth.
-    </p>
+    </p> 
 
-    <h2>Contact information</h2>
-    <ul>
-      <li>
-        Email:
-        <a href="mailto:jane@example.com">jane@example.com</a>
-      </li>
-      <li>
-        Web:
-        <a href="https://example.com">https://example.com</a>
-      </li>
-      <li>Tel: 123 45678</li>
-    </ul>
-  </body>
-</html>
+    <h2>Contact information</h2> <!---->
+    <ul class="contact-details"> <!-- Add contact-details   -->
+      <li> <!---->
+        Email: <a href="mailto:jane@example.com">jane@example.com</a> <!---->
+      </li><!---->
+      <li><!---->
+        Web: <a href="https://example.com">https://example.com</a>
+      </li> <!---->
+      <li>Tel: 123 45678</li> <!---->
+    </ul> <!---->
+  </div> <!---->
+  </body> <!---->
+</html> <!---->
