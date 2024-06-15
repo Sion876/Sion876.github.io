@@ -1,6 +1,6 @@
 .box {
-    width: 250px; /* Reasonable width for a large box */
-    height: 200px; /* Reasonable height for a large box */
+    width: 250px; /*  width for a large box */
+    height: 200px; /*  height for a large box */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -14,7 +14,7 @@
     border: 1px solid #ff0000; /* Slightly darker border */
     background: linear-gradient(to bottom right, rgb(249, 3, 3) 0%, rgb(255, 0, 0) 30%, rgba(255, 0, 0, 0.842) 100%); /* Linear gradient */
     box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5), /* Standard box shadow */
-                inset 2px 2px 5px rgba(255, 255, 255, 0.5), /* Inset white shadow */
-                inset -2px -2px 5px rgba(0, 0, 0, 0.5); /* Inset black shadow */
+                inset 2px 2px 5px rgba(255, 255, 255, 0.5), /* Insert white shadow */
+                inset -2px -2px 5px rgba(0, 0, 0, 0.5); /* Insert black shadow */
     text-align: center; /* Center the text within the box */
 }
