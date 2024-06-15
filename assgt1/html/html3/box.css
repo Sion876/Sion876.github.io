@@ -6,6 +6,7 @@
     align-items: center;
     margin: 0 auto; /* Center the box horizontally */
     font-size: 1.125rem; /* Font size: 1.125rem (18px) computed from 16px base (16px * 1.125 = 18px) */
+    font-family: Arial, Helvetica, sans-serif;
     background-color: #FF0000; /* Base color for the design */
     color: #e4dfdf; /* Contrasting color for the text */
     text-shadow: 1px 1px 2px black; /* Black text shadow */
