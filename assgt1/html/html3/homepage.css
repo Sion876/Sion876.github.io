@@ -43,3 +43,125 @@
   }
   
   /* WRITE YOUR CODE BELOW HERE */
+  
+
+@font-face {
+    font-family: 'Noto Sans';
+    src: url('fonts/NotoSans-Regular.woff2') format('woff2'),
+         url('fonts/NotoSans-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    font-family: 'Noto Sans', serif;
+    font-size: 15px;
+    line-height: 1.6;
+    letter-spacing: 0.05px;
+    word-spacing: 0.1p;
+    color: #333;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Merriweather', sans-serif;
+} 
+
+h1 {
+    font-size: 2.5em; /* Heading font size */
+}
+
+h2 {
+    font-size: 2em;
+}
+
+h3 {
+    font-size: 1.75em;
+}
+
+h4 {
+    font-size: 1.5em;
+}
+
+h5 {
+    font-size: 1.25em;
+}
+
+h6 {
+    font-size: 1em;
+}
+
+section p:first-of-type {
+    text-indent: 20px; /* Indentation for first paragraph after each heading */
+}
+
+/* Links */
+
+a {
+    text-decoration: underline; /* Underline links by default */
+    color: #0056b3; /* Link color */
+}
+
+a:visited {
+    color: #004494; /* Visited link color */
+}
+
+a:focus, a:hover {
+    text-decoration: none; /* Remove underline on hover/focus */
+}
+
+a:focus {
+    outline: none; /* Remove focus outline */
+}
+
+a:active {
+    color: #ff6347; /* Active link color */
+}
+
+/* Lists */
+
+ul, ol {
+    margin: 20px 0; /* List spacing */
+    padding-left: 20px;
+}
+
+
+
+/* Navigation menu */
+
+nav {
+    width: 200px;
+    background-color: #f4f4f4;
+    padding: 10px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    margin-bottom: 10px;
+}
+
+nav ul li a {
+    display: block;
+    padding: 10px;
+    background-color: #e0e0e0;
+    color: #333;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 5px;
+}
+
+nav ul li a:hover {
+    background-color: #c0c0c0;
+}
+
+nav ul li a:focus {
+    outline: none;
+}
+
+/* Footer */
+footer p {
+    margin: 0;
+}
