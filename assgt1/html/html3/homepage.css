@@ -8,19 +8,21 @@
     margin: 0 auto;
     min-width: 1000px;
     max-width: 1400px;
+    font-family: 'Noto Sans', sans-serif;
   }
   
   /* Layout */
-  
+
   section {
-    float: left;
+    float:left; 
     width: 50%;
   }
   
   aside {
-    float: left;
-    width: 30%;
+    float: left; 
+    width: 30%
   }
+
   
   nav {
     float: left;
@@ -32,63 +34,40 @@
   }
   
   header, section, aside, nav, footer {
+    font-family: 'Nunito Sans', sans-serif;
     padding: 20px;
   }
   
   /* header and footer */
-  
+
   header, footer {
     border-top: 5px solid #a66;
     border-bottom: 5px solid #a66;
+    text-align: center;
   }
   
   /* WRITE YOUR CODE BELOW HERE */
   
 
-@font-face {
-    font-family: 'Noto Sans';
-    src: url('fonts/NotoSans-Regular.woff2') format('woff2'),
-         url('fonts/NotoSans-Regular.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
-
-body {
-    font-family: 'Noto Sans', serif;
-    font-size: 15px;
+  body {
+    font-size: 14px;
     line-height: 1.6;
-    letter-spacing: 0.05px;
-    word-spacing: 0.1p;
+    letter-spacing: 0.03em;
+    word-spacing: 0.01em;
     color: #333;
+    
 }
 
-h1, h2, h3, h4, h5, h6 {
-    font-family: 'Merriweather', sans-serif;
+h1, h2, h3 {
+    font-family: 'Nunito Sans', sans-serif;
+    letter-spacing: 0.05em
 } 
 
 h1 {
     font-size: 2.5em; /* Heading font size */
+    text-align: center;
 }
 
-h2 {
-    font-size: 2em;
-}
-
-h3 {
-    font-size: 1.75em;
-}
-
-h4 {
-    font-size: 1.5em;
-}
-
-h5 {
-    font-size: 1.25em;
-}
-
-h6 {
-    font-size: 1em;
-}
 
 section p:first-of-type {
     text-indent: 20px; /* Indentation for first paragraph after each heading */
@@ -101,67 +80,25 @@ a {
     color: #0056b3; /* Link color */
 }
 
-a:visited {
-    color: #004494; /* Visited link color */
-}
-
-a:focus, a:hover {
-    text-decoration: none; /* Remove underline on hover/focus */
-}
-
-a:focus {
-    outline: none; /* Remove focus outline */
-}
-
-a:active {
-    color: #ff6347; /* Active link color */
-}
-
-/* Lists */
-
-ul, ol {
-    margin: 20px 0; /* List spacing */
-    padding-left: 20px;
-}
-
-
 
 /* Navigation menu */
-
-nav {
-    width: 200px;
-    background-color: #f4f4f4;
-    padding: 10px;
-}
 
 nav ul {
     list-style: none;
     padding: 0;
 }
 
-nav ul li {
-    margin-bottom: 10px;
+nav li {
+    margin-top: 10px;
+    padding: 20px;
+    border: 2px solid #ca9c9a ;
 }
 
-nav ul li a {
-    display: block;
-    padding: 10px;
-    background-color: #e0e0e0;
-    color: #333;
-    text-decoration: none;
-    text-align: center;
-    border-radius: 5px;
+nav a {
+    background-color: #ca9c9a ;
+
 }
 
-nav ul li a:hover {
-    background-color: #c0c0c0;
-}
-
-nav ul li a:focus {
-    outline: none;
-}
-
-/* Footer */
-footer p {
-    margin: 0;
+section img {
+    width: 15px;
 }
