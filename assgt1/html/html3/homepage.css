@@ -51,27 +51,28 @@
   
   /* WRITE YOUR CODE BELOW HERE */
   
-
+/*Body Styles*/
   body {
-    font-size: 14px;
-    line-height: 1.6;
-    letter-spacing: 0.03em;
-    word-spacing: 0.01em;
-    color: #333;
+    font-size: 14px; /*Sets the base fon size for the body*/
+    line-height: 1.6; /* Sets the line height to 1.6 times the font size*/
+    letter-spacing: 0.03em; /* Add a little extra space between letters */
+    word-spacing: 0.01em; /* Add a little extra space betweeen words */
+    color: #333; /*Sets the text colour to dark gray */
     
 }
 
+/*Heading styles*/
 h1, h2, h3 {
-    font-family: 'Nunito Sans', sans-serif;
-    letter-spacing: 0.05em
+    font-family: 'Nunito Sans', sans-serif; /*Applies the 'Nunito Sans' font to all heading*/
+    letter-spacing: 0.05em /* Add extra space between letters in headings */
 } 
 
 h1 {
-    font-size: 2.5em; /* Heading font size */
-    text-align: center;
+    font-size: 2.5em; /* h1 heading to 2.5 times size */
+    text-align: center; /* Center the h1 */
 }
 
-
+/*First paragraph after each heading */
 section p:first-of-type {
     text-indent: 20px; /* Indentation for first paragraph after each heading */
 }
@@ -87,30 +88,33 @@ a {
 /* Navigation menu */
 
 nav ul {
-    list-style: none;
-    padding: 0;
-    text-decoration: none;
-    text-align: center;
-    background-color: white;
+    list-style: none; /* Removes default bullet points from list items */
+    padding: 0; /*Remove default padding */
+    text-decoration: none; /* Ensures no underline on list items*/
+    text-align: center; /*Centers the list items*/
+    background-color: white; /* Sets the background color of the navigation menu to white */
 }
 
 nav li {
-    margin-top: 10px;
-    padding: 20px;
-    border: 2px solid #ca9c9a ;
+    margin-top: 10px; /* Added a 10px margin to the top of each list item */
+    padding: 20px; /* Added 20px padding inside each list item */
+    border: 2px solid #ca9c9a ; /* Sets a 2px solid border with a light reddish color around each list item */
 }
 
+/**/
 nav a {
-    background-color: #ffffff ;
+    background-color: #ffffff ; /*Sets the background color of links within the nav to white */
 
 }
 
+/**/
 nav a:hover {
-    background-color: #ffffff;
+    background-color: #ffffff; /*Keeps the background color of links white when hovered over*/
 
 }
 
+/* Image styles*/
 section img {
-    width: 15px;
+    width: 15px; /*Sets the width of images within sections to 15px*/
 }
 
