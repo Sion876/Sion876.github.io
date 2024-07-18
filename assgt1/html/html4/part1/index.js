@@ -6,7 +6,9 @@ const story = document.querySelector('.story');
 
 // Function to get a random value from an array
 function randomValueFromArray(array){
+    // Generate a random index
   const random = Math.floor(Math.random()*array.length);
+  // Return the element at the random index 
   return array[random];
 }
 
@@ -35,23 +37,30 @@ function result() {
     const yItem = randomValueFromArray(insertY);
     const zItem = randomValueFromArray(insertZ);
 
+    // Replace placeholders in the story with random values 
     newStory = newStory.replace('insertx:', xItem);
     newStory = newStory.replace(':inserty:', yItem);
     newStory = newStory.replace(':insertz:', zItem);
 
-
-
+  // Replaces the default name "Bob" in the story with a custom name, 
+  // only if a custom name is entered into the "Enter custom name" text field 
+  // before the generate button is pressed.
   if(customName.value !== '') {
     const name = customName.value;
-
+    newStory = newStory.replace('Bob', name);
+   
   }
 
+   // Converts the default US weight and temperature quantities and units in the story into UK equivalents 
+  // if the UK radio button is checked before the generate button is pressed.
   if(document.getElementById("uk").checked) {
-    const weight = Math.round(300);
-    const temperature =  Math.round(94);
-
+    const weight = Math.round(300 / 14) + 'stone';
+    const temperature =  Math.round((94 - 32)* 5 / 9 ) + 'centiigrade';
+    newStory = newStory.replace(' 94 fahrenheit', temperature);
+    newStory = newStory.replace('300 pounds ', weight);
   }
 
-  story.textContent = 
+  // Set the story paragraph text to the new story and make it visible
+  story.textContent = newStory;
   story.style.visibility = 'visible';
 }
