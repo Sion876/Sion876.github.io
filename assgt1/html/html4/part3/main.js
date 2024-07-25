@@ -1,3 +1,10 @@
+/*
+ Name: Sion Green 
+ Date: July 24, 2024.
+ Assignment 4 part 3 
+ 
+*/
+
 // setup canvas
 
 const canvas = document.querySelector("canvas");
