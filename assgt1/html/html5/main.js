@@ -1,3 +1,10 @@
+/*
+ Name: Sion Green 
+ Date: August 5, 2024
+ Assignment 5
+ 
+*/
+
 // functionality for showing/hiding the comments section
 
 const showHideBtn = document.querySelector('.show-hide');
